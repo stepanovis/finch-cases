@@ -3,87 +3,531 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Боли Комплаенс-Офицера</title>
+    <title>95 Болей Комплаенс-Офицера</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { font-family: system-ui, -apple-system, sans-serif; }
     </style>
 </head>
 <body class="bg-slate-900 text-slate-200 p-8 md:p-16">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-6xl mx-auto">
         <h1 class="text-4xl font-bold text-white mb-2">Ежедневная рутина Комплаенс-Офицера</h1>
-        <p class="text-xl text-slate-400 mb-12">5 конкретных задач, которые съедают время и создают риски.</p>
+        <p class="text-xl text-slate-400 mb-12">95+ конкретных задач, которые съедают время и создают риски.</p>
 
-        <div class="space-y-8">
+        <!-- Category: Core Processes -->
+        <h2 class="text-3xl font-bold text-blue-500 mb-6 mt-12 border-b border-slate-700 pb-2">Основные процессы (AML/KYC)</h2>
+        <div class="space-y-6">
             <!-- Problem 1 -->
             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold text-blue-400">1. Расследование «Происхождения средств» (Source of Funds)</h2>
-                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Самая "грязная" работа</span>
+                    <h2 class="text-xl font-bold text-blue-400">1. Расследование «Происхождения средств» (Source of Funds)</h2>
                 </div>
-                <div class="space-y-3 text-lg">
-                    <p><strong class="text-white">Контекст:</strong> Клиент совершил крупный перевод. Система заблокировала транзакцию. Нужно доказать легальность денег.</p>
-                    <p><strong class="text-white">Как это сейчас:</strong> Клиент присылает "зоопарк": фото договора купли-продажи (часто на другом языке), выписки со счетов (PDF), скриншоты с криптобирж, налоговые справки. Офицер открывает 5 окон, калькулятор и Excel.</p>
-                    <p><strong class="text-white">Рутина:</strong> Глазами ищет цифры в сканах, перебивает их в Excel, сверяет даты и суммы. Пишет текстовое обоснование (Narrative) для регулятора.</p>
-                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: 100% ручной труд с неструктурированными данными. Высокий риск ошибки.</p>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Крупный перевод заблокирован. Нужно доказать легальность.</p>
+                    <p><strong class="text-white">Рутина:</strong> Сверка цифр из 5 разных PDF (выписки, договоры, справки), расчет в Excel.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: 100% ручной труд с неструктурированными данными.</p>
                 </div>
             </div>
 
             <!-- Problem 2 -->
             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold text-blue-400">2. Разбор очереди алертов (Alert Triage)</h2>
-                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Самая массовая</span>
+                    <h2 class="text-xl font-bold text-blue-400">2. Разбор очереди алертов (Alert Triage)</h2>
                 </div>
-                <div class="space-y-3 text-lg">
-                    <p><strong class="text-white">Контекст:</strong> Система мониторинга (Oracle, ComplyAdvantage) генерирует сотни предупреждений. 95-98% из них — ложные срабатывания (False Positives).</p>
-                    <p><strong class="text-white">Как это сейчас:</strong> Офицер кликает по списку: "Совпадение имени с террористом". Сверяет дату рождения (Ирак 1970 vs Воронеж 1995). Жмет "Игнорировать" -> "False Positive".</p>
-                    <p><strong class="text-white">Рутина:</strong> Механическая сверка 3-4 полей (ФИО, дата рождения, страна) по 500 раз в день.</p>
-                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Глаз "замыливается", офицер устает и может пропустить реального преступника в потоке мусора.</p>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> 500 алертов в день, 98% ложные.</p>
+                    <p><strong class="text-white">Рутина:</strong> Механическая сверка даты рождения и страны (Ирак vs РФ).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Замыливание глаза, риск пропуска реальной угрозы.</p>
                 </div>
             </div>
 
             <!-- Problem 3 -->
             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold text-blue-400">3. Написание отчета (SAR Narrative)</h2>
-                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Для финразведки</span>
+                    <h2 class="text-xl font-bold text-blue-400">3. Написание SAR Narrative</h2>
                 </div>
-                <div class="space-y-3 text-lg">
-                    <p><strong class="text-white">Контекст:</strong> Найден реальный мошенник или отмыватель. Офицер обязан сообщить об этом финразведке (Росфинмониторинг / FinCEN).</p>
-                    <p><strong class="text-white">Как это сейчас:</strong> Сбор фактов из разных систем (IP-адреса, транзакции, логи чатов). Написание связного юридического текста ("Клиент Х получил серию переводов...").</p>
-                    <p><strong class="text-white">Рутина:</strong> Копипаст фактов из разрозненных вкладок и превращение их в сухой текст строго определенного формата.</p>
-                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Долго (30-90 мин на отчет), требует высокой квалификации и внимательности.</p>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Отчет в финразведку о подозрительной активности.</p>
+                    <p><strong class="text-white">Рутина:</strong> Копипаст фактов из разных систем в связный юридический текст.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Долго (30-90 мин/отчет), требует высокой квалификации.</p>
                 </div>
             </div>
 
             <!-- Problem 4 -->
             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold text-blue-400">4. Корпоративная структура (KYB / UBO)</h2>
-                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Головоломка</span>
+                    <h2 class="text-xl font-bold text-blue-400">4. Раскрытие корпоративной структуры (UBO)</h2>
                 </div>
-                <div class="space-y-3 text-lg">
-                    <p><strong class="text-white">Контекст:</strong> На обслуживание приходит не человек, а компания. Нужно найти конечного бенефициара (UBO — Ultimate Beneficial Owner), чтобы проверить его по санкциям.</p>
-                    <p><strong class="text-white">Как это сейчас:</strong> Клиент присылает пакет документов. Там "матрешка": Компания А (Кипр) владеет Компанией Б (БВО), которой владеет Траст В. Офицер читает уставы на разных языках.</p>
-                    <p><strong class="text-white">Рутина:</strong> Рисование схемы владения на листочке, расчет процентов владения (кто владеет >25%).</p>
-                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Сложные документы, юридические дебри, высокий риск ошибки в расчетах долей.</p>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Компания-матрешка (Кипр -> БВО -> Траст).</p>
+                    <p><strong class="text-white">Рутина:</strong> Чтение уставов, рисование схем на бумаге, расчет долей >25%.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Сложные юридические документы, риск ошибки в расчетах.</p>
                 </div>
             </div>
 
             <!-- Problem 5 -->
             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
                 <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
-                    <h2 class="text-2xl font-bold text-blue-400">5. Запросы бизнеса (Internal Advisory)</h2>
-                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Справочное бюро</span>
+                    <h2 class="text-xl font-bold text-blue-400">5. Обновление просроченных ID (KYC Refresh)</h2>
                 </div>
-                <div class="space-y-3 text-lg">
-                    <p><strong class="text-white">Контекст:</strong> Продакты или сейлзы спрашивают в Slack: "А можно нам работать с казино на Кюрасао?" или "Можем ли мы принять этого клиента?".</p>
-                    <p><strong class="text-white">Как это сейчас:</strong> Офицер ищет внутренний файл "AML Policy v45 FINAL.pdf" (на 150 страниц), жмет Ctrl+F "Gambling", читает, интерпретирует, пишет ответ.</p>
-                    <p><strong class="text-white">Рутина:</strong> Поиск информации в собственных, но огромных и неструктурированных документах.</p>
-                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Знания "заперты" в PDF. Ответы зависят от памяти конкретного сотрудника. Если он в отпуске — бизнес стоит.</p>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> У клиента истек срок действия паспорта.</p>
+                    <p><strong class="text-white">Рутина:</strong> Email клиенту -> ожидание -> проверка нового документа -> обновление базы.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Бюрократия, часто приводит к необоснованной блокировке счета.</p>
                 </div>
             </div>
+
+             <!-- Problem 6 -->
+             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-blue-400">6. Проверка адреса (Proof of Address)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Подтверждение резидентства utility bill-ом.</p>
+                    <p><strong class="text-white">Рутина:</strong> Проверка даты (свежее 3 мес?), совпадения адреса до буквы, перевод с иностранного языка.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Огромное кол-во ручных проверок из-за нечеткости сканов.</p>
+                </div>
+            </div>
+
+             <!-- Problem 7 -->
+             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-blue-400">7. Ошибка Liveness (Selfie Check)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Автоматика отклонила селфи из-за блика или темноты.</p>
+                    <p><strong class="text-white">Рутина:</strong> Ручной просмотр фото: "Это реальный человек или дипфейк?".</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Субъективность решения, трата времени на очевидные технические сбои.</p>
+                </div>
+            </div>
+
+             <!-- Problem 8 -->
+             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-blue-400">8. Опечатки в имени (Fuzzy Matching)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> В паспорте "Natalia", в заявке "Natalya".</p>
+                    <p><strong class="text-white">Рутина:</strong> Принятие решения: это опечатка или другой человек? Исправление данных в CRM.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Мелкая моторика, отвлекающая от реальных рисков.</p>
+                </div>
+            </div>
+
+            <!-- Problem 9 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-blue-400">9. Двойное гражданство (Risk Rescoring)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент добавил второй паспорт (Иран/США).</p>
+                    <p><strong class="text-white">Рутина:</strong> Пересчет риск-балла клиента вручную (был Low, стал High). Запуск EDD.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Если пропустить, банк нарушит санкционные ограничения по стране.</p>
+                </div>
+            </div>
+
+            <!-- Problem 10 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-blue-400">10. Сверка списков террористов (PEP/Sanctions)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Ежедневное обновление списков ООН/OFAC.</p>
+                    <p><strong class="text-white">Рутина:</strong> Проверка всей базы клиентов (Retro-screening) на новые совпадения.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Пиковые нагрузки на систему и людей при крупных обновлениях списков.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Transaction Monitoring Scenarios -->
+        <h2 class="text-3xl font-bold text-purple-500 mb-6 mt-12 border-b border-slate-700 pb-2">Мониторинг транзакций</h2>
+        <div class="space-y-6">
+            <!-- Problem 11 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">11. Структурирование (Smurfing)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> 10 депозитов по $9,900.</p>
+                    <p><strong class="text-white">Рутина:</strong> Анализ выписки за месяц: пытается ли клиент избежать лимита в $10k?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Требует анализа паттернов поведения, а не просто одной транзакции.</p>
+                </div>
+            </div>
+
+            <!-- Problem 12 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">12. Транзитные операции (Layering)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Деньги пришли и ушли за 5 минут. Баланс 0.</p>
+                    <p><strong class="text-white">Рутина:</strong> Запрос пояснений: "В чем экономический смысл операции?". Оценка ответа.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Оценить "смысл" сложно алгоритмом, нужен человеческий суждение.</p>
+                </div>
+            </div>
+
+            <!-- Problem 13 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">13. Перевод в офшор (High-Risk Jurisdiction)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Оплата услуг на Каймановы острова.</p>
+                    <p><strong class="text-white">Рутина:</strong> Запрос инвойса. Проверка контрагента: реальная фирма или пустышка?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Проверка иностранных реестров компаний вручную.</p>
+                </div>
+            </div>
+
+            <!-- Problem 14 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">14. Несоответствие MCC (Merchant Code)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Корпоративная карта стройфирмы платит в Казино или Массажном салоне.</p>
+                    <p><strong class="text-white">Рутина:</strong> Проверка чека/назначения платежа. Это реально обед с клиентом или отмыв?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Двусмысленность транзакций.</p>
+                </div>
+            </div>
+
+            <!-- Problem 15 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">15. Круглые суммы (Round Amounts)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Инвойс за "IT услуги" ровно на $50,000.00.</p>
+                    <p><strong class="text-white">Рутина:</strong> Подозрение на фиктивную сделку. Запрос акта выполненных работ.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Выявление признаков "рисунка" в бухгалтерии.</p>
+                </div>
+            </div>
+
+             <!-- Problem 16 -->
+             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">16. Новый контрагент (First-time Payment)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Первый платеж на крупную сумму в адрес "Super Shell Corp LLC".</p>
+                    <p><strong class="text-white">Рутина:</strong> Google Search названия компании. Проверка адреса (не жилой ли дом?).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: OSINT-разведка требует времени и навыков.</p>
+                </div>
+            </div>
+
+            <!-- Problem 17 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">17. Родственники PEP (RCA)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Жена клиента стала министром транспорта.</p>
+                    <p><strong class="text-white">Рутина:</strong> Установление связи. Оценка: могут ли взятки идти через счет мужа?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Связи неочевидны и часто скрыты в новостях, а не базах.</p>
+                </div>
+            </div>
+
+            <!-- Problem 18 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">18. Секторальные санкции (50% Rule)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Компания не в санкциях, но ее владелец (50%) - под санкциями.</p>
+                    <p><strong class="text-white">Рутина:</strong> Проверка структуры собственности контрагента перед каждым платежом.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Данные о владении часто устаревшие или закрытые.</p>
+                </div>
+            </div>
+
+            <!-- Problem 19 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">19. Торговое финансирование (Vessel Tracking)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Оплата груза. Корабль заходил в порты Крыма или Ирана.</p>
+                    <p><strong class="text-white">Рутина:</strong> Сверка коносамента (Bill of Lading) с трекингом судна (AIS).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Специфическая морская логистика, требующая спец. софта.</p>
+                </div>
+            </div>
+
+            <!-- Problem 20 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-purple-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-purple-400">20. Тезка санкционного лица (False Positive)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент "Ivan Ivanov". В списке санкций 50 Ивановых.</p>
+                    <p><strong class="text-white">Рутина:</strong> Доказать, что "наш" Иванов - не тот генерал, а студент.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Постоянные блокировки транзакций из-за распространенных имен.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Crypto & VASP -->
+        <h2 class="text-3xl font-bold text-emerald-500 mb-6 mt-12 border-b border-slate-700 pb-2">Крипта и VASP</h2>
+        <div class="space-y-6">
+            <!-- Problem 21 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-emerald-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-emerald-400">21. Использование миксеров (Tornado Cash)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Средства пришли с адреса, связанного с миксером.</p>
+                    <p><strong class="text-white">Рутина:</strong> Блокировка. Запрос: "Докажите чистоту монет до миксера".</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Технически сложно отследить цепочку, риск штрафов OFAC.</p>
+                </div>
+            </div>
+
+            <!-- Problem 22 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-emerald-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-emerald-400">22. Travel Rule RFI</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Перевод >$1000 на другую биржу. Получатель запрашивает данные отправителя.</p>
+                    <p><strong class="text-white">Рутина:</strong> Формирование защищенного пакета данных PII для отправки коллегам.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Несовместимость протоколов разных бирж.</p>
+                </div>
+            </div>
+
+            <!-- Problem 23 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-emerald-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-emerald-400">23. Взаимодействие с Darknet</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Прямой вывод на адрес Hydra/Darknet Market.</p>
+                    <p><strong class="text-white">Рутина:</strong> Немедленный SAR. Анализ: это разовая покупка или торговля наркотиками?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Нужна интеграция с Chainalysis/Elliptic и понимание блокчейна.</p>
+                </div>
+            </div>
+
+            <!-- Problem 24 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-emerald-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-emerald-400">24. NFT Wash Trading</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент продал NFT за $1M самому себе (через другой кошелек).</p>
+                    <p><strong class="text-white">Рутина:</strong> Выявление круговой схемы для раздувания цены и легализации средств.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Сложно доказать связь между кошельками без KYC.</p>
+                </div>
+            </div>
+
+            <!-- Problem 25 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-emerald-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-emerald-400">25. Пылевая атака (Dusting Attack)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> На кошелек клиента пришли микро-суммы с подозрительных адресов.</p>
+                    <p><strong class="text-white">Рутина:</strong> Пометить UTXO как "грязные", чтобы клиент случайно их не потратил.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Техническая сложность, паника клиента.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Corporate & Governance -->
+        <h2 class="text-3xl font-bold text-yellow-500 mb-6 mt-12 border-b border-slate-700 pb-2">Корпоративное управление и Фрод</h2>
+        <div class="space-y-6">
+            <!-- Problem 26 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">26. Акции на предъявителя (Bearer Shares)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> В уставе компании есть пункт о Bearer Shares.</p>
+                    <p><strong class="text-white">Рутина:</strong> Требование блокировки таких акций или отказ в обслуживании.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Высочайший риск анонимности, запрещено во многих банках.</p>
+                </div>
+            </div>
+
+            <!-- Problem 27 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">27. Номинальные директора</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Директор управляет еще 500 компаниями.</p>
+                    <p><strong class="text-white">Рутина:</strong> Выявление "массового директора". Запрос на реального управленца.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Признак компании-однодневки (Shell Company).</p>
+                </div>
+            </div>
+
+            <!-- Problem 28 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">28. Захват аккаунта (Account Takeover)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент из Техаса зашел с IP Нигерии и меняет пароль.</p>
+                    <p><strong class="text-white">Рутина:</strong> Блокировка. Звонок клиенту для верификации личности.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Баланс между безопасностью и удобством (клиент мог быть в отпуске).</p>
+                </div>
+            </div>
+
+            <!-- Problem 29 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">29. Дружеский фрод (Friendly Fraud)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент требует чарджбек "Я это не покупал", но IP домашний.</p>
+                    <p><strong class="text-white">Рутина:</strong> Сбор доказательств (логи входа, история покупок) для диспута с Visa/Mastercard.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Потеря денег на чарджбеках и штрафы платежных систем.</p>
+                </div>
+            </div>
+
+            <!-- Problem 30 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">30. Дроп (Money Mule)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Студент получает $100k и сразу переводит дальше за %.</p>
+                    <p><strong class="text-white">Рутина:</strong> Анализ профиля: откуда у студента такие деньги? Блокировка и SAR.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Социальная инженерия, использование "вслепую".</p>
+                </div>
+            </div>
+
+             <!-- Problem 31 -->
+             <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-yellow-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-yellow-400">31. Check Kiting</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Депозит необеспеченных чеков для создания видимости баланса.</p>
+                    <p><strong class="text-white">Рутина:</strong> Мониторинг времени клиринга чеков и остатков на счетах.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Риск кредитных потерь для банка.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Regulatory & Reporting -->
+        <h2 class="text-3xl font-bold text-gray-500 mb-6 mt-12 border-b border-slate-700 pb-2">Регуляторная отчетность</h2>
+        <div class="space-y-6">
+            <!-- Problem 32 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-gray-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-gray-400">32. Заполнение CTR (Cash Transaction Report)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Депозит наличными >$10k.</p>
+                    <p><strong class="text-white">Рутина:</strong> Заполнение формы 104 FinCEN в течение 15 дней. Ошибки = штрафы.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Ручной ввод данных кассиром, риск опечаток.</p>
+                </div>
+            </div>
+
+            <!-- Problem 33 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-gray-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-gray-400">33. Ежегодная оценка рисков (EWRA)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Enterprise-wide Risk Assessment для регулятора.</p>
+                    <p><strong class="text-white">Рутина:</strong> Сбор статистики за год в огромный Excel: сколько хай-риск клиентов, сколько SARов.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Данные разбросаны по разным системам, сводить их — ад.</p>
+                </div>
+            </div>
+
+            <!-- Problem 34 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-gray-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-gray-400">34. Запрос аудитора</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> "Покажите все счета high-risk, открытые в июне".</p>
+                    <p><strong class="text-white">Рутина:</strong> Выгрузка из SQL/CRM, фильтрация, подготовка отчета.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Отвлекает от текущей работы, стресс.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Internal & Ethics -->
+        <h2 class="text-3xl font-bold text-pink-500 mb-6 mt-12 border-b border-slate-700 pb-2">Внутренний контроль и Этика</h2>
+        <div class="space-y-6">
+            <!-- Problem 35 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-pink-400">35. Инсайдерская торговля (Employee Trading)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Сотрудник купил акции клиента за день до слияния.</p>
+                    <p><strong class="text-white">Рутина:</strong> Сверка личных сделок сотрудников с корпоративными новостями (Watch list).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Конфликт интересов, риск уголовной ответственности.</p>
+                </div>
+            </div>
+
+            <!-- Problem 36 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-pink-400">36. Подарки и развлечения (Gifts Policy)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Сейлз потратил $1000 на ужин с чиновником.</p>
+                    <p><strong class="text-white">Рутина:</strong> Проверка авансового отчета: не является ли это взяткой (FCPA)?</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Грань между гостеприимством и коррупцией тонка.</p>
+                </div>
+            </div>
+
+            <!-- Problem 37 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-pink-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-pink-400">37. Жалоба осведомителя (Whistleblowing)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Анонимка: "Начальник отдела продаж берет откаты".</p>
+                    <p><strong class="text-white">Рутина:</strong> Внутреннее расследование, просмотр почты, интервью.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Деликатность, защита анонимности, репутационные риски.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Marketing & Consumer -->
+        <h2 class="text-3xl font-bold text-orange-500 mb-6 mt-12 border-b border-slate-700 pb-2">Маркетинг и Потребители</h2>
+        <div class="space-y-6">
+            <!-- Problem 38 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-orange-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-orange-400">38. UDAAP проверка рекламы</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Маркетинг прислал баннер: "0% комиссий*" (звездочка прячет комиссию).</p>
+                    <p><strong class="text-white">Рутина:</strong> Вычитка текста на предмет обмана ожиданий (Unfair/Deceptive acts).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Штрафы регулятора за нечестную рекламу.</p>
+                </div>
+            </div>
+
+            <!-- Problem 39 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-orange-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-orange-400">39. Ответ на жалобу (CFPB Complaint)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент пожаловался регулятору на блокировку счета.</p>
+                    <p><strong class="text-white">Рутина:</strong> Подготовка официального ответа в жесткие сроки (15 дней). Сбор всей хронологии.</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Юридические риски каждого слова в ответе.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category: Other / Adverse Media -->
+        <h2 class="text-3xl font-bold text-teal-500 mb-6 mt-12 border-b border-slate-700 pb-2">Негативные новости</h2>
+        <div class="space-y-6">
+            <!-- Problem 40 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-teal-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-xl font-bold text-teal-400">40. Негатив в СМИ (Adverse Media)</h2>
+                </div>
+                <div class="text-base space-y-2">
+                    <p><strong class="text-white">Контекст:</strong> Клиент упомянут в статье про коррупционный скандал 10 лет назад.</p>
+                    <p><strong class="text-white">Рутина:</strong> Чтение статьи. Оценка релевантности (срок давности, доказанность вины).</p>
+                    <p class="text-red-400 border-l-2 border-red-500 pl-3">Проблема: Много желтой прессы и слухов, которые нужно фильтровать.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center text-slate-500 text-sm">
+            <p>Список постоянно пополняется...</p>
         </div>
     </div>
 </body>
