@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Боли Комплаенс-Офицера</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-200 p-8 md:p-16">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold text-white mb-2">Ежедневная рутина Комплаенс-Офицера</h1>
+        <p class="text-xl text-slate-400 mb-12">5 конкретных задач, которые съедают время и создают риски.</p>
+
+        <div class="space-y-8">
+            <!-- Problem 1 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-blue-400">1. Расследование «Происхождения средств» (Source of Funds)</h2>
+                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Самая "грязная" работа</span>
+                </div>
+                <div class="space-y-3 text-lg">
+                    <p><strong class="text-white">Контекст:</strong> Клиент совершил крупный перевод. Система заблокировала транзакцию. Нужно доказать легальность денег.</p>
+                    <p><strong class="text-white">Как это сейчас:</strong> Клиент присылает "зоопарк": фото договора купли-продажи (часто на другом языке), выписки со счетов (PDF), скриншоты с криптобирж, налоговые справки. Офицер открывает 5 окон, калькулятор и Excel.</p>
+                    <p><strong class="text-white">Рутина:</strong> Глазами ищет цифры в сканах, перебивает их в Excel, сверяет даты и суммы. Пишет текстовое обоснование (Narrative) для регулятора.</p>
+                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: 100% ручной труд с неструктурированными данными. Высокий риск ошибки.</p>
+                </div>
+            </div>
+
+            <!-- Problem 2 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-blue-400">2. Разбор очереди алертов (Alert Triage)</h2>
+                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Самая массовая</span>
+                </div>
+                <div class="space-y-3 text-lg">
+                    <p><strong class="text-white">Контекст:</strong> Система мониторинга (Oracle, ComplyAdvantage) генерирует сотни предупреждений. 95-98% из них — ложные срабатывания (False Positives).</p>
+                    <p><strong class="text-white">Как это сейчас:</strong> Офицер кликает по списку: "Совпадение имени с террористом". Сверяет дату рождения (Ирак 1970 vs Воронеж 1995). Жмет "Игнорировать" -> "False Positive".</p>
+                    <p><strong class="text-white">Рутина:</strong> Механическая сверка 3-4 полей (ФИО, дата рождения, страна) по 500 раз в день.</p>
+                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Глаз "замыливается", офицер устает и может пропустить реального преступника в потоке мусора.</p>
+                </div>
+            </div>
+
+            <!-- Problem 3 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-blue-400">3. Написание отчета (SAR Narrative)</h2>
+                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Для финразведки</span>
+                </div>
+                <div class="space-y-3 text-lg">
+                    <p><strong class="text-white">Контекст:</strong> Найден реальный мошенник или отмыватель. Офицер обязан сообщить об этом финразведке (Росфинмониторинг / FinCEN).</p>
+                    <p><strong class="text-white">Как это сейчас:</strong> Сбор фактов из разных систем (IP-адреса, транзакции, логи чатов). Написание связного юридического текста ("Клиент Х получил серию переводов...").</p>
+                    <p><strong class="text-white">Рутина:</strong> Копипаст фактов из разрозненных вкладок и превращение их в сухой текст строго определенного формата.</p>
+                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Долго (30-90 мин на отчет), требует высокой квалификации и внимательности.</p>
+                </div>
+            </div>
+
+            <!-- Problem 4 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-blue-400">4. Корпоративная структура (KYB / UBO)</h2>
+                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Головоломка</span>
+                </div>
+                <div class="space-y-3 text-lg">
+                    <p><strong class="text-white">Контекст:</strong> На обслуживание приходит не человек, а компания. Нужно найти конечного бенефициара (UBO — Ultimate Beneficial Owner), чтобы проверить его по санкциям.</p>
+                    <p><strong class="text-white">Как это сейчас:</strong> Клиент присылает пакет документов. Там "матрешка": Компания А (Кипр) владеет Компанией Б (БВО), которой владеет Траст В. Офицер читает уставы на разных языках.</p>
+                    <p><strong class="text-white">Рутина:</strong> Рисование схемы владения на листочке, расчет процентов владения (кто владеет >25%).</p>
+                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Сложные документы, юридические дебри, высокий риск ошибки в расчетах долей.</p>
+                </div>
+            </div>
+
+            <!-- Problem 5 -->
+            <div class="bg-slate-800 p-6 rounded-lg border border-slate-700 hover:border-blue-500 transition-colors">
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                    <h2 class="text-2xl font-bold text-blue-400">5. Запросы бизнеса (Internal Advisory)</h2>
+                    <span class="mt-2 md:mt-0 bg-slate-700 text-xs px-2 py-1 rounded text-slate-300 w-fit">Справочное бюро</span>
+                </div>
+                <div class="space-y-3 text-lg">
+                    <p><strong class="text-white">Контекст:</strong> Продакты или сейлзы спрашивают в Slack: "А можно нам работать с казино на Кюрасао?" или "Можем ли мы принять этого клиента?".</p>
+                    <p><strong class="text-white">Как это сейчас:</strong> Офицер ищет внутренний файл "AML Policy v45 FINAL.pdf" (на 150 страниц), жмет Ctrl+F "Gambling", читает, интерпретирует, пишет ответ.</p>
+                    <p><strong class="text-white">Рутина:</strong> Поиск информации в собственных, но огромных и неструктурированных документах.</p>
+                    <p class="text-red-400 text-base border-l-4 border-red-500 pl-4 py-1 bg-red-900/10">Проблема: Знания "заперты" в PDF. Ответы зависят от памяти конкретного сотрудника. Если он в отпуске — бизнес стоит.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
